@@ -1,0 +1,21 @@
+<form action="/api/works" method="POST" id="add_work">
+    <div class="new_work">
+        <div class="form-group">
+            <label for="DateOfissue">DateOfissue</label>
+            <input type="hidden" name="id" value="">
+            <input type="datetime-local" name="DateOfissue" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="ReturnDate">ReturnDate</label>
+            <input type="datetime-local" name="ReturnDate" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="CarCondition">CarCondition</label>
+            <input type="text" name="CarCondition" value="" placeholder="0">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>

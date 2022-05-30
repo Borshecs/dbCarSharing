@@ -1,0 +1,47 @@
+<%-include('include/_header')%>
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/workers"><i class="fas fa-angle-double-left"></i> All Customers</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Update Customer</h2>
+                <span class="text-light">Use the below to update an customer</span>
+            </div>
+
+            <form method="POST" id="update_worker">
+                <div class="new-worker">
+                    <div class="form-group">
+                        <label for="Surname">Surname</label>
+                        <input type="hidden" name="id" value="<%=worker._id%>">
+                        <input type="text" name="Surname" value="<%=worker.Surname%>" placeholder="Subbotin">
+                    </div>
+                    <div class="form-group">
+                        <label for="Surname">Name</label>
+                        <input type="text" name="Name" value="<%=worker.Name%>" placeholder="Alexey">
+                    </div>
+                    <div class="form-group">
+                        <label for="Surname">Patronymic</label>
+                        <input type="text" name="Patronymic" value="<%=worker.Patronymic%>" placeholder="Stepanovic">
+                    </div>
+                    <div class="form-group">
+                        <label for="Surname">Adress</label>
+                        <input type="text" name="Adress" value="<%=worker.Adress%>" placeholder="Ivanovo">
+                    </div>
+                    <div class="form-group">
+                        <label for="Surname">Phone</label>
+                        <input type="text" name="Phone" value="<%=worker.Phone%>" placeholder="89436253477">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+<%-include('include/_footer')%>
